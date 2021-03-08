@@ -1,0 +1,36 @@
+IMPORT SUBPROCESS
+https://recursospython.com/guias-y-manuales/subprocess-creacion-y-comunicacion-con-procesos/#:~:text=El%20m%C3%B3dulo%20est%C3%A1ndar%20subprocess%20permite,obtener%20el%20valor%20de%20retorno
+
+####################################
+
+TELEGRAM
+https://github.com/python-telegram-bot/python-telegram-bot/wiki
+
+https://www.atareao.es/tutorial/crea-tu-propio-bot-para-telegram/bot-en-python-para-telegram/
+
+https://www.atareao.es/tutorial/crea-tu-propio-bot-para-telegram/
+
+https://core.telegram.org/bots/samples
+
+https://robologs.net/2019/07/30/como-programar-un-chatbot-para-telegram-en-python/
+
+https://www.codementor.io/@karandeepbatra/part-1-how-to-create-a-telegram-bot-in-python-in-under-10-minutes-19yfdv4wrq
+
+https://medium.com/@goyoregalado/bots-de-telegram-en-python-134b964fcdf7 #### https://gitlab.com/goyoregalado/achicaynabot
+
+###################################
+
+INFORMACION API
+https://python-telegram-bot.readthedocs.io/en/stable/
+
+https://juancisneros.com.ve/crea-tu-propio-bot-para-telegram-usando-python/
+
+####################################
+
+CREACION DE VIRTUALENVS PYTHON
+https://docs.python.org/es/3/tutorial/venv.html
+
+#####################################
+
+
+https://github.com/python-telegram-bot/python-telegram-bot
