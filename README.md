@@ -1,2 +1,2 @@
 # botTelegram
-Bot sysadmin Telegram
+Bot SysAdmin Telegram
