@@ -18,6 +18,8 @@ https://www.codementor.io/@karandeepbatra/part-1-how-to-create-a-telegram-bot-in
 
 https://medium.com/@goyoregalado/bots-de-telegram-en-python-134b964fcdf7 #### https://gitlab.com/goyoregalado/achicaynabot
 
+https://www.youtube.com/watch?v=rwKjDcf9JJI
+
 ###################################
 
 INFORMACION API
@@ -34,3 +36,8 @@ https://docs.python.org/es/3/tutorial/venv.html
 
 
 https://github.com/python-telegram-bot/python-telegram-bot
+
+#####################################
+
+PING GRUPOS DE IPS
+https://rm-rf.es/escanear-rango-de-ips/

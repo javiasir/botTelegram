@@ -4,3 +4,4 @@ __pycache__/
 *$py.class
 
 src/auth.py
+src/telegram
