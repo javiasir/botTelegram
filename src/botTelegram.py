@@ -17,6 +17,7 @@ def start(update, context):
 
 def ping(update, context):
     logger.info('El usuario desea buscar un equipo')
+
     saltos = str(context.args[0])
     ip = str(context.args[1])
 
@@ -28,6 +29,28 @@ def ping(update, context):
     else:
         update.message.reply_text('Esta apagado o no responde')
         print('Esta apagado o no responde')
+
+def scanRange(update, context):
+    logger.info('El usuario quiere escanear un rango')
+
+    moviles = range(24,28)
+
+    rango = str(context.args[0])
+
+    if rango == moviles:
+        for c in rango:
+            print('192.168.1.'+str(c))
+
+            ping = subprocess.run(['ping', '-c', 1, '192.168.1.'+str(c)])
+
+            if ping.returncode == 0:
+                update.message.reply_text('192.168.1.'+str(c), 'Encendido')
+            else:
+                update.message.reply_text('192.168.1.'+str(c), 'Apagado')
+    else:
+        update.message.reply_text('Introduce un rango correctamente')
+
+
 
 def help(update, context):
     logger.info('El usuario ha pedido ayuda')
@@ -45,6 +68,7 @@ def main():
     dispatcher.add_handler(CommandHandler('start', start))
     dispatcher.add_handler(CommandHandler('ping', ping))
     dispatcher.add_handler(CommandHandler('help', help))
+    dispatcher.add_handler(CommandHandler('scanrange', scanRange))
 
     # Start the Bot to receive the messages
     updater.start_polling()
