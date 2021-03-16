@@ -31,25 +31,35 @@ def ping(update, context):
         print('Esta apagado o no responde')
 
 def scanRange(update, context):
+    user_id = update.effective_user['id']
     logger.info('El usuario quiere escanear un rango')
 
-    moviles = range(24,28)
+    rango = context.args[0]
 
-    rango = str(context.args[0])
+    moviles = range(1,3)
 
-    if rango == moviles:
-        for c in rango:
-            print('192.168.1.'+str(c))
+    redes = {
+        'moviles': moviles
+    }
 
-            ping = subprocess.run(['ping', '-c', 1, '192.168.1.'+str(c)])
+    # print(redes[rango])
 
-            if ping.returncode == 0:
-                update.message.reply_text('192.168.1.'+str(c), 'Encendido')
-            else:
-                update.message.reply_text('192.168.1.'+str(c), 'Apagado')
-    else:
-        update.message.reply_text('Introduce un rango correctamente')
+    for c in redes[rango]:
+        ip = '192.168.1.'+str(c)
+        ping = subprocess.run(['ping', '-c', '1', ip])
 
+        if ping.returncode == 0:
+            print(ip, 'Encendido')
+            context.bot.sendMessage(
+                chat_id= user_id,
+                parse_mode="HTML",
+                text=f"{ip}, <b>Encendido</b>")
+        else:
+            print(ip, 'Apagado')
+            context.bot.sendMessage(
+                chat_id= user_id,
+                parse_mode="HTML",
+                text=f"{ip}, <b>Apagado</b>") 
 
 
 def help(update, context):

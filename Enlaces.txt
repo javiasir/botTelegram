@@ -20,6 +20,8 @@ https://medium.com/@goyoregalado/bots-de-telegram-en-python-134b964fcdf7 #### ht
 
 https://www.youtube.com/watch?v=rwKjDcf9JJI
 
+https://www.youtube.com/watch?v=73coNZ-5hWM&t=292s
+
 ###################################
 
 INFORMACION API
